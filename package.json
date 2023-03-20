@@ -1,0 +1,22 @@
+{
+  "name": "state-machine-diagrams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vita-mojo/state-machine": "^1.0.4",
+    "tslib": "^2.5.0",
+    "vis-network": "^9.1.4"
+  },
+  "devDependencies": {
+    "@vita-mojo/eslint-plugin-eslint": "0.0.8",
+    "eslint": "^8.36.0",
+    "prettier": "^2.8.5",
+    "typescript": "^5.0.2"
+  }
+}

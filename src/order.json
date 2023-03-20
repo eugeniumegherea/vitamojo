@@ -1,0 +1,137 @@
+[
+  {
+    "name": "pay",
+    "from": "pending",
+    "to": "confirmed"
+  },
+  {
+    "name": "cancel",
+    "from": "confirmed",
+    "to": "cancelled"
+  },
+  {
+    "name": "cancel",
+    "from": "pending",
+    "to": "cancelled"
+  },
+  {
+    "name": "cancel",
+    "from": "remake",
+    "to": "cancelled"
+  },
+  {
+    "name": "done",
+    "from": "confirmed",
+    "to": "ready-to-collect"
+  },
+  {
+    "name": "cancel",
+    "from": "ready-to-collect",
+    "to": "cancelled"
+  },
+  {
+    "name": "cancel",
+    "from": "in-production",
+    "to": "cancelled"
+  },
+  {
+    "name": "cancel",
+    "from": "ready-for-bagging",
+    "to": "cancelled"
+  },
+  {
+    "name": "done",
+    "from": "in-production",
+    "to": "ready-to-collect"
+  },
+  {
+    "name": "readyForBagging",
+    "from": "in-production",
+    "to": "ready-for-bagging"
+  },
+  {
+    "name": "done",
+    "from": "ready-for-bagging",
+    "to": "ready-to-collect"
+  },
+  {
+    "name": "prepare",
+    "from": "confirmed",
+    "to": "in-production"
+  },
+  {
+    "name": "prepare",
+    "from": "pending",
+    "to": "in-production"
+  },
+  {
+    "name": "prepare",
+    "from": "remake",
+    "to": "in-production"
+  },
+  {
+    "name": "collect",
+    "from": "ready-to-collect",
+    "to": "collected"
+  },
+  {
+    "name": "redo",
+    "from": "ready-to-collect",
+    "to": "remake"
+  },
+  {
+    "name": "delete",
+    "from": "remake",
+    "to": "till-deleted"
+  },
+  {
+    "name": "delete",
+    "from": "confirmed",
+    "to": "till-deleted"
+  },
+  {
+    "name": "delete",
+    "from": "ready-to-collect",
+    "to": "till-deleted"
+  },
+  {
+    "name": "anyToPending",
+    "from": "*",
+    "to": "pending"
+  },
+  {
+    "name": "anyToConfirmed",
+    "from": "*",
+    "to": "confirmed"
+  },
+  {
+    "name": "anyToReadyForBagging",
+    "from": "*",
+    "to": "ready-for-bagging"
+  },
+  {
+    "name": "anyToProduction",
+    "from": "*",
+    "to": "in-production"
+  },
+  {
+    "name": "anyToReadyToCollect",
+    "from": "*",
+    "to": "ready-to-collect"
+  },
+  {
+    "name": "anyToCollected",
+    "from": "*",
+    "to": "collected"
+  },
+  {
+    "name": "anyToIntegrationError",
+    "from": "*",
+    "to": "integration-error"
+  },
+  {
+    "name": "integrationErrorToIntegrationErrorCorrected",
+    "from": "integration-error",
+    "to": "integration-error-corrected"
+  }
+]

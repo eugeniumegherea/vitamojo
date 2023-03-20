@@ -1,0 +1,19 @@
+{
+  "root": true,
+  "plugins": ["@vita-mojo/eslint"],
+  "extends": ["plugin:@vita-mojo/eslint/prettier"],
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["plugin:@vita-mojo/eslint/javascript"],
+      "rules": {}
+    },
+    {
+      "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
+      "env": {
+        "jest": true
+      },
+      "rules": {}
+    }
+  ]
+}
