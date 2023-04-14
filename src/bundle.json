@@ -1,47 +1,65 @@
-[
-  {
-    "name": "done",
-    "from": "confirmed",
-    "to": "ready-to-collect"
-  },
-  {
-    "name": "done",
-    "from": "in-production",
-    "to": "ready-to-collect"
-  },
-  {
-    "name": "prepare",
-    "from": "confirmed",
-    "to": "in-production"
-  },
-  {
-    "name": "cancel",
-    "from": "in-production",
-    "to": "cancelled"
-  },
-  {
-    "name": "cancel",
-    "from": "confirmed",
-    "to": "cancelled"
-  },
-  {
-    "name": "anyToConfirmed",
-    "from": "*",
-    "to": "confirmed"
-  },
-  {
-    "name": "anyToProduction",
-    "from": "*",
-    "to": "in-production"
-  },
-  {
-    "name": "anyToReadyToCollect",
-    "from": "*",
-    "to": "ready-to-collect"
-  },
-  {
-    "name": "goTo",
-    "from": "*",
-    "to": "*"
-  }
-]
+[{
+  "name": "pay",
+  "from": "pending",
+  "to": "confirmed"
+}, {
+  "name": "done",
+  "from": "confirmed",
+  "to": "ready-to-collect"
+}, {
+  "name": "done",
+  "from": "in-production",
+  "to": "ready-to-collect"
+}, {
+  "name": "prepare",
+  "from": "confirmed",
+  "to": "in-production"
+}, {
+  "name": "readyForBagging",
+  "from": "in-production",
+  "to": "ready-for-bagging"
+}, {
+  "name": "cancel",
+  "from": "in-production",
+  "to": "cancelled"
+}, {
+  "name": "cancel",
+  "from": "confirmed",
+  "to": "cancelled"
+}, {
+  "name": "done",
+  "from": "ready-for-bagging",
+  "to": "ready-to-collect"
+}, {
+  "name": "collect",
+  "from": "ready-to-collect",
+  "to": "collected"
+}, {
+  "name": "anyToPending",
+  "from": "*",
+  "to": "pending"
+}, {
+  "name": "anyToConfirmed",
+  "from": "*",
+  "to": "confirmed"
+}, {
+  "name": "anyToInProduction",
+  "from": "*",
+  "to": "in-production"
+}, {
+  "name": "anyToReadyForBagging",
+  "from": "*",
+  "to": "ready-for-bagging"
+}, {
+  "name": "anyToReadyToCollect",
+  "from": "*",
+  "to": "ready-to-collect"
+}, {
+  "name": "anyToCollected",
+  "from": "*",
+  "to": "collected"
+}, {
+  "name": "goTo",
+  "from": "*",
+  "to": "*"
+}]

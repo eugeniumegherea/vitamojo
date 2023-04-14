@@ -1,1 +1,182 @@
-[{"x":-22,"y":59,"id":"confirmed","connections":[{"id":"ready-to-collect","name":"done"}]},{"x":236,"y":58,"id":"ready-to-collect","connections":[]},{"x":-172,"y":-179,"id":"in-production","connections":[{"id":"ready-to-collect","name":"done"}]},{"x":-179,"y":69,"id":"cancelled","connections":[]},{"x":204,"y":-186,"id":"*","connections":[{"id":"confirmed","name":"anyToConfirmed"}]}]
+[
+  {
+    "x": 2,
+    "y": 301,
+    "id": "pending",
+    "connections": [
+      {
+        "id": "confirmed",
+        "name": "pay"
+      },
+      {
+        "id": "*",
+        "name": "pay"
+      }
+    ]
+  },
+  {
+    "x": 113,
+    "y": 112,
+    "id": "confirmed",
+    "connections": [
+      {
+        "id": "pending",
+        "name": "pay"
+      },
+      {
+        "id": "ready-to-collect",
+        "name": "pay"
+      },
+      {
+        "id": "in-production",
+        "name": "pay"
+      },
+      {
+        "id": "cancelled",
+        "name": "pay"
+      },
+      {
+        "id": "*",
+        "name": "pay"
+      }
+    ]
+  },
+  {
+    "x": -186,
+    "y": -159,
+    "id": "ready-to-collect",
+    "connections": [
+      {
+        "id": "confirmed",
+        "name": "done"
+      },
+      {
+        "id": "in-production",
+        "name": "done"
+      },
+      {
+        "id": "ready-for-bagging",
+        "name": "done"
+      },
+      {
+        "id": "collected",
+        "name": "done"
+      },
+      {
+        "id": "*",
+        "name": "done"
+      }
+    ]
+  },
+  {
+    "x": 105,
+    "y": -87,
+    "id": "in-production",
+    "connections": [
+      {
+        "id": "ready-to-collect",
+        "name": "done"
+      },
+      {
+        "id": "confirmed",
+        "name": "done"
+      },
+      {
+        "id": "ready-for-bagging",
+        "name": "done"
+      },
+      {
+        "id": "cancelled",
+        "name": "done"
+      },
+      {
+        "id": "*",
+        "name": "done"
+      }
+    ]
+  },
+  {
+    "x": -7,
+    "y": -205,
+    "id": "ready-for-bagging",
+    "connections": [
+      {
+        "id": "in-production",
+        "name": "readyForBagging"
+      },
+      {
+        "id": "ready-to-collect",
+        "name": "readyForBagging"
+      },
+      {
+        "id": "*",
+        "name": "readyForBagging"
+      }
+    ]
+  },
+  {
+    "x": 292,
+    "y": 24,
+    "id": "cancelled",
+    "connections": [
+      {
+        "id": "in-production",
+        "name": "cancel"
+      },
+      {
+        "id": "confirmed",
+        "name": "cancel"
+      }
+    ]
+  },
+  {
+    "x": -279,
+    "y": -32,
+    "id": "collected",
+    "connections": [
+      {
+        "id": "ready-to-collect",
+        "name": "collect"
+      },
+      {
+        "id": "*",
+        "name": "collect"
+      }
+    ]
+  },
+  {
+    "x": -180,
+    "y": 180,
+    "id": "*",
+    "connections": [
+      {
+        "id": "pending",
+        "name": "anyToPending"
+      },
+      {
+        "id": "confirmed",
+        "name": "anyToPending"
+      },
+      {
+        "id": "in-production",
+        "name": "anyToPending"
+      },
+      {
+        "id": "ready-for-bagging",
+        "name": "anyToPending"
+      },
+      {
+        "id": "ready-to-collect",
+        "name": "anyToPending"
+      },
+      {
+        "id": "collected",
+        "name": "anyToPending"
+      },
+      {
+        "id": "*",
+        "name": "anyToPending"
+      }
+    ]
+  }
+]
